@@ -19,8 +19,8 @@ const Menu = [
 function NavBar() {
   return (
     <div className="NavBar">
-      <div className="flex m-3 bg-gray-400 backdrop-blur-lg rounded-xl">
-        <div className="flex flex-auto items-center gap-3 text-2xl text-gray-900 font-semibold m-6">
+      <div className="flex m-3  backdrop-blur-bg rounded-xl">
+        <div className="flex flex-auto items-center gap-3 text-2xl text-white font-semibold m-6">
           Cinemaroll
           <svg
             xmlns="http://www.w3.org/2000/svg"
@@ -37,9 +37,9 @@ function NavBar() {
             />
           </svg>
         </div>
-        <nav className="flex flex-end items-center gap-x-4 m-1">
+        <nav className="flex items-center gap-x-4 m-1">
           {Menu.map((item) => (
-            <button className="text-gray-900 font-semibold text-bold p-4 hover:bg-orange-500 rounded-xl m-0">
+            <button className="text-white font-semibold text-bold p-4 hover:bg-orange-500 rounded-xl m-0">
               {item.title}
             </button>
           ))}

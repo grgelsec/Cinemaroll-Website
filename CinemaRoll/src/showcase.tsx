@@ -1,13 +1,13 @@
 function KeepTrack() {
   return (
-    <div>
+    <div className="">
       <div className="font-semibold text-white m-5">
         <h1>On Cinemate you can...</h1>
-        <hr className="border-solid border-gray-400" />
+        <hr className="border-solid border-black" />
       </div>
       <div className="flex flex-wrap m-6">
         <div className="w-full md:w-1/2 lg:w-1/3 p-2">
-          <button className="w-full h-20 bg-gray-400 rounded-sm font-semibold hover:bg-orange-500 flex items-center justify-left">
+          <button className="w-full h-20 bg-black text-white rounded-md font-semibold hover:bg-orange-500 flex items-center justify-left">
             <svg
               xmlns="http://www.w3.org/2000/svg"
               fill="none"
@@ -31,7 +31,7 @@ function KeepTrack() {
           </button>
         </div>
         <div className="w-full md:w-1/2 lg:w-1/3 p-2">
-          <button className="w-full h-20 bg-gray-400 rounded-sm font-semibold hover:bg-orange-500 flex items-center justify-left">
+          <button className="w-full h-20 bg-black text-white rounded-md font-semibold hover:bg-orange-500 flex items-center justify-left">
             <svg
               xmlns="http://www.w3.org/2000/svg"
               fill="none"
@@ -52,7 +52,7 @@ function KeepTrack() {
           </button>
         </div>
         <div className="w-full md:w-1/2 lg:w-1/3 p-2">
-          <button className="w-full h-20 bg-gray-400 rounded-sm font-semibold hover:bg-orange-500 flex items-center justify-left">
+          <button className="w-full h-20 bg-black text-white rounded-md font-semibold hover:bg-orange-500 flex items-center justify-left">
             <svg
               xmlns="http://www.w3.org/2000/svg"
               fill="none"
@@ -71,7 +71,7 @@ function KeepTrack() {
           </button>
         </div>
         <div className="w-full md:w-1/2 lg:w-1/3 p-2">
-          <button className="w-full h-20 bg-gray-400 rounded-sm font-semibold hover:bg-orange-500 flex items-center justify-left">
+          <button className="w-full h-20 bg-black text-white rounded-md font-semibold hover:bg-orange-500 flex items-center justify-left">
             <svg
               xmlns="http://www.w3.org/2000/svg"
               fill="none"
@@ -90,7 +90,7 @@ function KeepTrack() {
           </button>
         </div>
         <div className="w-full md:w-1/2 lg:w-1/3 p-2">
-          <button className="w-full h-20 bg-gray-400 rounded-sm font-semibold hover:bg-orange-500 flex items-center justify-left">
+          <button className="w-full h-20 bg-black text-white rounded-md font-semibold hover:bg-orange-500 flex items-center justify-left">
             <svg
               xmlns="http://www.w3.org/2000/svg"
               fill="none"
@@ -114,7 +114,7 @@ function KeepTrack() {
           </button>
         </div>
         <div className="w-full md:w-1/2 lg:w-1/3 p-2">
-          <button className="w-full h-20 bg-gray-400 rounded-sm font-semibold hover:bg-orange-500 flex items-center justify-left">
+          <button className="w-full h-20 bg-black text-white rounded-md font-semibold hover:bg-orange-500 flex items-center justify-left">
             <svg
               xmlns="http://www.w3.org/2000/svg"
               fill="none"
