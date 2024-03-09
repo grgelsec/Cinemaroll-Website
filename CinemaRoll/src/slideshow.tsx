@@ -27,9 +27,12 @@ export default function BoxOffice({ images }: BoxOfficeProps) {
 
   //March 6 - buttons work, need to make it look sexy and get the images to relative
   return (
-    <div>
+    <div className="">
+      <div className="text-white text-7xl font-semibold ml-10">
+        Review trending movies...
+      </div>
       <div className="flex justify-center">
-        <div className="flex items-center justify-center w-full h-[70vh]">
+        <div className="flex items-center justify-end w-full h-[70vh]">
           <button
             className="flex w-10 h-10 bg-black rounded-3xl font-semibold hover:bg-orange-500 items-center justify-center m-2"
             onClick={previousImage}

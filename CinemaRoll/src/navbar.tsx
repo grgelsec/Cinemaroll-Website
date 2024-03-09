@@ -12,7 +12,7 @@ const Menu = [
     title: "Hot Takes",
   },
   {
-    title: "Sign In",
+    title: "Sign Up",
   },
 ];
 

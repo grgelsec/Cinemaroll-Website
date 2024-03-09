@@ -1,6 +1,7 @@
 import NavBar from "./navbar";
 import Options from "./showcase";
 import BoxOffice from "./slideshow";
+import Welcome from "./welcome";
 import barbie from "./MovieImages/barbie.jpg";
 import dune from "./MovieImages/dune.jpg";
 import koffm from "./MovieImages/koffm.jpg";
@@ -13,6 +14,7 @@ function App() {
   return (
     <div>
       <NavBar></NavBar>
+      <Welcome></Welcome>
       <BoxOffice images={movies} />
       <Options></Options>
     </div>
