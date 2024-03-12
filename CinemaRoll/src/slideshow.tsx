@@ -27,14 +27,30 @@ export default function BoxOffice({ images }: BoxOfficeProps) {
 
   //March 6 - buttons work, need to make it look sexy and get the images to relative
   return (
-    <div className="">
-      <div className="text-white text-7xl font-semibold ml-10">
+    <div className="m-10">
+      <div className="flex justify-start text-white text-7xl font-semibold m-10">
         Review trending movies...
       </div>
       <div className="flex justify-center">
         <div className="flex items-center justify-end w-full h-[70vh]">
+          <div className="flex col flex-wrap">
+            <div className="flex m-5 bg-black h-[20vh] w-[20vw] rounded-3xl">
+              <img
+                className="flex justify-end items-center object-contain h-40 w-20
+                rounded-3xl m-5"
+                src={images[3]}
+              ></img>
+              <h1 className=" text-white font-semibold">Oppenheimer</h1>
+              <p className="flex items-center justify-center text-white font-semibold text-sm">
+                Engaging and Intense. Truly a advancement in film making.
+              </p>
+            </div>
+            <div className="flex items-start justify-start m-5 bg-black h-[20vh] w-[20vw] rounded-3xl"></div>
+            <div className="flex items-start justify-start m-5 bg-black h-[20vh] w-[20vw] rounded-3xl"></div>
+            <div className="flex items-start justify-start m-5 bg-black h-[20vh] w-[20vw] rounded-3xl"></div>
+          </div>
           <button
-            className="flex w-10 h-10 bg-black rounded-3xl font-semibold hover:bg-orange-500 items-center justify-center m-2"
+            className="flex w-10 h-10 bg-black rounded-3xl hover:bg-red-600 items-center justify-center m-2"
             onClick={previousImage}
           >
             <svg
@@ -42,8 +58,8 @@ export default function BoxOffice({ images }: BoxOfficeProps) {
               fill="none"
               viewBox="0 0 24 24"
               strokeWidth={1.5}
-              stroke="orange"
-              className="w-6 h-6"
+              stroke="white"
+              className="w-10 h-6"
             >
               <path
                 strokeLinecap="round"
@@ -52,12 +68,14 @@ export default function BoxOffice({ images }: BoxOfficeProps) {
               />
             </svg>
           </button>
-          <img
-            className="flex object-contain justify-center h-30 w-80 rounded-3xl m-4"
-            src={images[index]}
-          ></img>
+          <div className="flex items-center justify-center h-[85vh] w-[45vw] rounded-3xl bg-gradient-to-tl from-black mb-20 mr-20">
+            <img
+              className="flex object-contain h-[80vh] w-[50vw] rounded-3xl"
+              src={images[index]}
+            ></img>
+          </div>
           <button
-            className="flex w-10 h-10 bg-black rounded-3xl font-semibold hover:bg-orange-500 items-center justify-center m-2"
+            className="flex w-10 h-10 rounded-3xl bg-black hover:bg-red-600 items-center justify-center"
             onClick={nextImage}
           >
             <svg
@@ -65,8 +83,8 @@ export default function BoxOffice({ images }: BoxOfficeProps) {
               fill="none"
               viewBox="0 0 24 24"
               strokeWidth={1.5}
-              stroke="orange"
-              className="w-6 h-6"
+              stroke="white"
+              className="w-10 h-6"
             >
               <path
                 strokeLinecap="round"
@@ -75,20 +93,6 @@ export default function BoxOffice({ images }: BoxOfficeProps) {
               />
             </svg>
           </button>
-          <div className="flex justify-end flex-col flex-wrap gap-x-4 space-y-10">
-            <div className="flex items-center bg-gradient-to-t from-black w-[25vw] rounded-xl">
-              <img
-                className="flex justify-start object-contain h-40 w-20 rounded-3xl m-2"
-                src={images[index + 1]}
-              ></img>
-            </div>
-            <div className="flex items-center bg-gradient-to-t from-black w-[25vw] rounded-xl">
-              <img
-                className="flex justify-end object-contain h-40 w-20 rounded-3xl m-2"
-                src={images[index + 2]}
-              ></img>
-            </div>
-          </div>
         </div>
       </div>
     </div>
