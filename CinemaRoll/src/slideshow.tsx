@@ -27,28 +27,30 @@ export default function BoxOffice({ images }: BoxOfficeProps) {
 
   //March 6 - buttons work, need to make it look sexy and get the images to relative
   return (
-    <div className="m-10">
-      <div className="flex justify-start text-white text-7xl font-semibold m-10">
-        Review trending movies...
+    <div className="flex flex-wrap h-screen">
+      <div className="flex flex-shrink-0 text-white text-7xl font-semibold">
+       <h1 className="mt-10 ml-10">Review trending movies...</h1>
       </div>
-      <div className="flex justify-center">
-        <div className="flex items-center justify-end w-full h-[70vh]">
-          <div className="flex col flex-wrap">
-            <div className="flex m-5 bg-black h-[20vh] w-[20vw] rounded-3xl">
-              <img
-                className="flex justify-end items-center object-contain h-40 w-20
+      <div className="flex items-center">
+        <div className="flex items-center col flex-wrap ml-10 mb-0">
+          <div className="flex m- bg-black h-[20vh] w-[22vw] rounded-lg">
+            <img
+              className="flex justify-end items-center object-contain h-40 w-20
                 rounded-3xl m-5"
-                src={images[3]}
-              ></img>
-              <h1 className=" text-white font-semibold">Oppenheimer</h1>
-              <p className="flex items-center justify-center text-white font-semibold text-sm">
-                Engaging and Intense. Truly a advancement in film making.
-              </p>
-            </div>
-            <div className="flex items-start justify-start m-5 bg-black h-[20vh] w-[20vw] rounded-3xl"></div>
-            <div className="flex items-start justify-start m-5 bg-black h-[20vh] w-[20vw] rounded-3xl"></div>
-            <div className="flex items-start justify-start m-5 bg-black h-[20vh] w-[20vw] rounded-3xl"></div>
+              src={images[3]}
+            ></img>
+            <h1 className=" text-white font-semibold">Oppenheimer</h1>
+            <p className="flex items-center justify-center text-white font-semibold text-sm">
+              Engaging and Intense. Truly a advancement in film making.
+            </p>
           </div>
+          <div className="m-5 bg-black h-[20vh] w-[22vw] rounded-lg"></div>
+          <div className="m- bg-black h-[20vh] w-[22vw] rounded-lg"></div>
+          <div className="m-5 bg-black h-[20vh] w-[22vw] rounded-lg"></div>
+          <div className="m- bg-black h-[20vh] w-[22vw] rounded-lg"></div>
+          <div className="m-5 bg-black h-[20vh] w-[22vw] rounded-lg"></div>
+        </div>
+        <div className="flex object-contain items-center justify-center h-[75vh] w-[65vw] rounded-3xl bg-gradient-to-tl from-black mb-60 mr-40">
           <button
             className="flex w-10 h-10 bg-black rounded-3xl hover:bg-red-600 items-center justify-center m-2"
             onClick={previousImage}
@@ -68,14 +70,12 @@ export default function BoxOffice({ images }: BoxOfficeProps) {
               />
             </svg>
           </button>
-          <div className="flex items-center justify-center h-[85vh] w-[45vw] rounded-3xl bg-gradient-to-tl from-black mb-20 mr-20">
-            <img
-              className="flex object-contain h-[80vh] w-[50vw] rounded-3xl"
-              src={images[index]}
-            ></img>
-          </div>
+          <img
+            className="flex object-contain justify-center h-[60vh] w-[40vw] rounded-3xl"
+            src={images[index]}
+          ></img>
           <button
-            className="flex w-10 h-10 rounded-3xl bg-black hover:bg-red-600 items-center justify-center"
+            className="flex w-10 h-10 rounded-3xl bg-black hover:bg-red-600 items-center justify-center m-2"
             onClick={nextImage}
           >
             <svg
