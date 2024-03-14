@@ -32,25 +32,12 @@ export default function BoxOffice({ images }: BoxOfficeProps) {
        <h1 className="mt-10 ml-10">Review trending movies...</h1>
       </div>
       <div className="flex items-center">
-        <div className="flex items-center col flex-wrap ml-10 mb-0">
-          <div className="flex m- bg-black h-[20vh] w-[22vw] rounded-lg">
-            <img
-              className="flex justify-end items-center object-contain h-40 w-20
-                rounded-3xl m-5"
-              src={images[3]}
-            ></img>
-            <h1 className=" text-white font-semibold">Oppenheimer</h1>
-            <p className="flex items-center justify-center text-white font-semibold text-sm">
-              Engaging and Intense. Truly a advancement in film making.
-            </p>
-          </div>
-          <div className="m-5 bg-black h-[20vh] w-[22vw] rounded-lg"></div>
-          <div className="m- bg-black h-[20vh] w-[22vw] rounded-lg"></div>
-          <div className="m-5 bg-black h-[20vh] w-[22vw] rounded-lg"></div>
-          <div className="m- bg-black h-[20vh] w-[22vw] rounded-lg"></div>
-          <div className="m-5 bg-black h-[20vh] w-[22vw] rounded-lg"></div>
+        <div className="flex items-center col flex-wrap ml-10 overflow-hidden">
+          <div className="flex m-5 bg-black lg:h-[20vh] lg:w-[30vw] rounded-lg"></div>
+          <div className="m-5 bg-black h-[20vh] w-[30vw] rounded-lg"></div>
+          <div className="m-5 bg-black h-[20vh] w-[30vw] rounded-lg"></div>
         </div>
-        <div className="flex object-contain items-center justify-center h-[75vh] w-[65vw] rounded-3xl bg-gradient-to-tl from-black mb-60 mr-40">
+        <div className="flex static items-center justify-center max-height max-width rounded-3xl bg-gradient-to-tl from-black mb-60 mr-40 overflow-hidden">
           <button
             className="flex w-10 h-10 bg-black rounded-3xl hover:bg-red-600 items-center justify-center m-2"
             onClick={previousImage}
