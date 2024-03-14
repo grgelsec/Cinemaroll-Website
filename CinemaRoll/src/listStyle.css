@@ -1,0 +1,17 @@
+
+    .perspective {
+      perspective: 6000px;
+    }
+    .rotate-y-15 {
+      transform: rotateY(45deg);
+    }
+    .scale-x-110 {
+      transform: scaleX(1.1);
+    }
+    .transform-origin-right {
+      transform-origin: right center;
+    }
+    .rotate-y-scale-x {
+        transform: rotateY(45deg) scaleX(1.1);
+      }
+  
