@@ -18,7 +18,7 @@ const Menu = [
 
 function NavBar() {
   return (
-    <div className="NavBar">
+    <div className="">
       <div className="flex m-3  backdrop-blur-bg rounded-xl">
         <div className="flex flex-auto items-center gap-3 text-2xl text-white font-semibold m-6">
           Cinemaroll

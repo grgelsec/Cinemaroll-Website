@@ -23,7 +23,7 @@ function App() {
       <animated.div style={{ opacity: boxOfficeOpacity }}>
         <BoxOffice images={movies}></BoxOffice>
       </animated.div>
-      <animated.div style={{ opacity: createListsOpacity }}>
+      <animated.div style={{ opacity: createListsOpacity }}> 
         <CreateLists></CreateLists>
       </animated.div>
       <animated.div style={{ opacity: shareHotTakesOpacity }}>

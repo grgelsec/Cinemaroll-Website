@@ -1,6 +1,6 @@
 export default function Welcome() {
   return (
-    <div className="h-screen w-screen overflow-scroll">
+    <div className="h-screen overflow-auto">
       <div className="relative flex flex-col justify-center">
         <h1 className="text-white text-8xl font-semibold flex w-scren h-screen items-center justify-center">
           Welcome to Cinemaroll
