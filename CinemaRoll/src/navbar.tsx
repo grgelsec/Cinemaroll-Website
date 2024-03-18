@@ -1,3 +1,4 @@
+
 const Menu = [
   {
     title: "Films",
@@ -38,10 +39,10 @@ function NavBar() {
           </svg>
         </div>
         <nav className="flex items-center gap-x-4 m-1">
-          {Menu.map((item) => (
-            <button className="text-white font-semibold text-bold p-4 hover:bg-red-500 rounded-xl m-0">
-              {item.title}
-            </button>
+          {Menu.map((item) => (    
+              <button className="text-white font-semibold text-bold p-4 hover:bg-red-500 rounded-xl m-0">
+                {item.title}
+              </button>
           ))}
         </nav>
       </div>

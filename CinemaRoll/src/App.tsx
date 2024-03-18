@@ -20,16 +20,17 @@ function App() {
     <div>
       <NavBar></NavBar>
       <Welcome></Welcome>
-      <animated.div style={{ opacity: boxOfficeOpacity }}>
-        <BoxOffice images={movies}></BoxOffice>
-      </animated.div>
-      <animated.div style={{ opacity: createListsOpacity }}> 
+      <a href="#boxOffice">
+        <animated.div style={{ opacity: boxOfficeOpacity }}>
+          <BoxOffice images={movies}></BoxOffice>
+        </animated.div>
+      </a>
+      <animated.div style={{ opacity: createListsOpacity }}>
         <CreateLists></CreateLists>
       </animated.div>
       <animated.div style={{ opacity: shareHotTakesOpacity }}>
         <ShareHotTakes></ShareHotTakes>
       </animated.div>
-
     </div>
   );
 }

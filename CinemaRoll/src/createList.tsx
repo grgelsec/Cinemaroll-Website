@@ -38,15 +38,15 @@ export default function CreateLists() {
                 <div className="flex flex-row flex-wrap mt-20 m-3">
                   <img
                     src={bladerunner}
-                    className="flex object-contain w-full max-w-xs lg:w-1/3 md:w-1/3 sm:w-1/6"
+                    className="flex object-contain w-full min-w-xs lg:w-1/3 md:w-1/3 sm:w-1/6"
                   />
                   <img
                     src={Inception}
-                    className="flex object-contain w-full max-w-xs lg:w-1/3 md:w-1/3 sm:w-1/6"
+                    className="flex object-contain w-full min-w-xs lg:w-1/3 md:w-1/3 sm:w-1/6"
                   />
                   <img
                     src={LaLaLand}
-                    className="flex object-contain w-full max-w-xs lg:w-1/3 md:w-1/3 sm:w-1/6"
+                    className="flex object-contain w-full min-w-xs lg:w-1/3 md:w-1/3 sm:w-1/6"
                   />
                 </div>
               </div>
@@ -111,8 +111,8 @@ export default function CreateLists() {
               </div>
             </div>
           </div>
-          <div className="flex justify-center mt-40">
-            <div className="flex lg:w-1/2 md:w-1/4 sm:w-full">
+          <div className="flex justify-center mt-20">
+            <div className="flex lg:w-1/2 md:w-1/4 sm:w-full bg-black rounded-xl">
               <p className="text-center text-white text-2xl font-bold">
                 Lists are a great way for audiances to interact by creatings
                 lists of various genres. Lists help audiances find new movies,

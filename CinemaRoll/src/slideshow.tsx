@@ -27,61 +27,61 @@ export default function BoxOffice({ images }: BoxOfficeProps) {
 
   //March 6 - buttons work, need to make it look sexy and get the images to relative
   return (
-    <div className="h-screen overflow-auto">
-      <div className="flex flex-wrap h-screen">
-        <div className="flex flex-shrink-0 text-white text-7xl font-semibold">
-          <h1 className="mt-10 ml-10">Review trending movies...</h1>
+    <div id="boxOffice" className="h-screen overflow-auto">
+      <div className="flex flex-shrink-0 text-white text-7xl font-semibold">
+        <h1 className="mt-10 ml-10">Review trending movies...</h1>
+      </div>
+      <div className="flex flex-row gap-x-10 items-center">
+        <div className="flex relative flex-col w-full lg:w-1/2 flex-wrap gap-y-10 m-10 overflow-hidden bg-black">
+          <div className="flex w-full min-w-xs lg:w-1/2 md:w-1/2 sm:w-full rounded-lg"></div>
+          <div className="flex w-full min-w-xs lg:w-1/2 md:w-1/2 sm:w-full rounded-lg"></div>
+          <div className="flex w-full min-w-xs lg:w-1/2 md:w-1/2 sm:w-full rounded-lg"></div>
         </div>
-        <div className="flex items-center">
-          <div className="flex items-center col flex-wrap ml-10 overflow-hidden">
-            <div className="flex m-5 bg-black lg:h-[20vh] lg:w-[30vw] rounded-lg"></div>
-            <div className="m-5 bg-black h-[20vh] w-[30vw] rounded-lg"></div>
-            <div className="m-5 bg-black h-[20vh] w-[30vw] rounded-lg"></div>
-          </div>
-          <div className="flex items-center justify-center max-height max-width rounded-3xl bg-gradient-to-tl from-black mb-60 mr-40 overflow-hidden">
+        <div className="flex items-center lg:w-1/3 md:w-1/2 sm:w-full rounded-3xl bg-gradient-to-tl from-black overflow-hidden">
+          <div className="flex flex-col items-center w-full lg:w-1/2 md:w-1/2 sm:w-1/2 xs:w-1/2">
             <button
-              className="flex w-10 h-10 bg-black rounded-3xl hover:bg-red-600 items-center justify-center m-2"
+              className="flex bg-black rounded-xl hover:bg-red-600 items-center m-2"
               onClick={previousImage}
             >
               <svg
                 xmlns="http://www.w3.org/2000/svg"
                 fill="none"
                 viewBox="0 0 24 24"
-                strokeWidth={1.5}
+                stroke-width="1.5"
                 stroke="white"
                 className="w-10 h-6"
               >
                 <path
-                  strokeLinecap="round"
-                  strokeLinejoin="round"
-                  d="M10.5 19.5 3 12m0 0 7.5-7.5M3 12h18"
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                  d="M4.5 10.5 12 3m0 0 7.5 7.5M12 3v18"
                 />
               </svg>
             </button>
-            <img
-              className="flex object-contain justify-center h-[60vh] w-[40vw] rounded-3xl"
-              src={images[index]}
-            ></img>
             <button
-              className="flex w-10 h-10 rounded-3xl bg-black hover:bg-red-600 items-center justify-center m-2"
+              className="flex rounded-xl bg-black hover:bg-red-600 items-center m-2"
               onClick={nextImage}
             >
               <svg
                 xmlns="http://www.w3.org/2000/svg"
                 fill="none"
                 viewBox="0 0 24 24"
-                strokeWidth={1.5}
+                stroke-width="1.5"
                 stroke="white"
                 className="w-10 h-6"
               >
                 <path
-                  strokeLinecap="round"
-                  strokeLinejoin="round"
-                  d="M13.5 4.5 21 12m0 0-7.5 7.5M21 12H3"
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                  d="M19.5 13.5 12 21m0 0-7.5-7.5M12 21V3"
                 />
               </svg>
             </button>
           </div>
+          <img
+            className="flex object-contain w-full rounded-3xl"
+            src={images[index]}
+          ></img>
         </div>
       </div>
     </div>

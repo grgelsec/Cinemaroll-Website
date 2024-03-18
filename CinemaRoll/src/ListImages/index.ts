@@ -13,3 +13,4 @@ export { default as shaw } from "./Classics/Shawshank.jpg";
 export { default as bath } from "./Ghibli/bath.jpg";
 export { default as totoro } from "./Ghibli/myneighbourtotoro.jpg";
 export { default as spirited } from "./Ghibli/spiritedaway.jpg";
+
