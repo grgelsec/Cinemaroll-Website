@@ -114,8 +114,8 @@ export default function CreateLists() {
           <div className="flex justify-center mt-20">
             <div className="flex lg:w-1/2 md:w-1/4 sm:w-full bg-black rounded-xl">
               <p className="text-center text-white text-2xl font-bold">
-                Lists are a great way for audiances to interact by creatings
-                lists of various genres. Lists help audiances find new movies,
+                Lists are a great way for audiences to interact by creatings
+                lists of various genres. Lists help audiences find new movies,
                 series, and genres to expand their movie taste and grow their
                 watchlist!
               </p>
