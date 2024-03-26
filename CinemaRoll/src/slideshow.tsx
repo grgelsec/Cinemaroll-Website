@@ -33,8 +33,8 @@ export default function BoxOffice({ images }: BoxOfficeProps) {
       </div>
       <div className="flex gap-x-10">
         <div className="flex relative flex-col w-full lg:w-1/2 flex-wrap gap-y-10 m-10 overflow-hidden bg-black">
-          <div className="flex w-full min-w-xs lg:w-1/2 md:w-1/2 sm:w-full rounded-lg m-5">
-            <img src={images[1]} className="w-1/3" />
+          <div className="flex w-full min-w-xs lg:h-1/4 md:h-1/3 lg:w-1/2 md:w-1/2 sm:w-full rounded-lg m-5">
+            <img src={images[3]} className="w-1/3" />
             <div className="">
               <h1 className="flex col text-white font-semibold text-3xl ml-5">
                 <svg
@@ -98,15 +98,15 @@ export default function BoxOffice({ images }: BoxOfficeProps) {
                   />
                 </svg>
               </h1>
-              <p className="flex col text-center text-white font-semibold text-lg">
+              <p className="flex col text-center text-white font-semibold text-lg m-10">
                 Almost perfect! Greatly shows the mind of a genius yet foolish
                 person. The soundtrack is completely perfect but not for
                 everyone
               </p>
             </div>
           </div>
-          <div className="flex w-full min-w-xs lg:w-1/2 md:w-1/2 sm:w-full rounded-lg m-5">
-            <img src={images[3]} className="w-1/3" />
+          <div className="flex w-full min-w-xs lg:h-1/4 md:h-1/3 lg:w-1/2 md:w-1/2 sm:w-full rounded-lg m-5">
+            <img src={images[0]} className="w-1/3" />
             <h1 className="flex row text-white font-semibold text-3xl ml-5">
               <svg
                 xmlns="http://www.w3.org/2000/svg"
@@ -146,7 +146,8 @@ export default function BoxOffice({ images }: BoxOfficeProps) {
               </svg>
             </h1>
           </div>
-          <div className="flex w-full min-w-xs lg:w-1/2 md:w-1/2 sm:w-full rounded-lg m-5">
+          <div className="flex w-full min-w-xs lg:h-1/4 md:h-1/3 lg:w-1/2 md:w-1/2 sm:w-full rounded-lg m-5">
+            <img src={images[1]} className="w-1/3" />
             <h1 className="flex row text-white font-semibold text-3xl ml-5">
               <svg
                 xmlns="http://www.w3.org/2000/svg"
@@ -199,7 +200,7 @@ export default function BoxOffice({ images }: BoxOfficeProps) {
             </h1>
           </div>
         </div>
-        <div className="flex items-center lg:w-1/3 md:w-1/2 sm:w-full rounded-3xl bg-gradient-to-tl from-black overflow-hidden">
+        <div className="flex items-center lg:w-1/3 md:w-1/2 sm:w-full rounded-3xl overflow-hidden">
           <div className="flex flex-col items-center w-full lg:w-1/2 md:w-1/2 sm:w-1/2 xs:w-1/2">
             <button
               className="flex bg-black rounded-xl hover:bg-red-600 items-center m-2"

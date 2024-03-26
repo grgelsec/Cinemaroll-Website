@@ -25,7 +25,7 @@ export default function CreateLists() {
   return (
     <div className="h-screen">
       <div className="flex flex-col mt-40">
-        <div className="flex justify-start text-white text-5xl font-semibold m-10">
+        <div className="flex justify-start text-white text-5xl font-semibold mt-40">
           <h1>Create and share lists...</h1>
         </div>
         <div className="">
@@ -112,8 +112,8 @@ export default function CreateLists() {
             </div>
           </div>
           <div className="flex justify-center mt-20">
-            <div className="flex lg:w-1/2 md:w-1/4 sm:w-full bg-black rounded-xl">
-              <p className="text-center text-white text-2xl font-bold">
+            <div className="flex lg:w-1/2 md:w-1/4 sm:w-fullrounded-xl">
+              <p className="text-center text-white text-2xl font-semibold">
                 Lists are a great way for audiences to interact by creatings
                 lists of various genres. Lists help audiences find new movies,
                 series, and genres to expand their movie taste and grow their

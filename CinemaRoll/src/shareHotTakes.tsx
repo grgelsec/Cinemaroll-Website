@@ -5,7 +5,7 @@ export default function ShareHotTakes() {
         <div className="flex justify-start text-white text-5xl font-semibold m-10">
           <h1>Give us your hottest takes...</h1>
         </div>
-        <div>
+        <div className="flex justify-center">
           <svg
             xmlns="http://www.w3.org/2000/svg"
             fill="none"
