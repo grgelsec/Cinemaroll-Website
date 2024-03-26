@@ -23,9 +23,9 @@ import "./listStyle.css";
 
 export default function CreateLists() {
   return (
-    <div className="h-screen overflow-auto">
-      <div className="flex flex-col">
-        <div className="flex justify-center text-white text-7xl font-semibold m-10">
+    <div className="h-screen">
+      <div className="flex flex-col mt-40">
+        <div className="flex justify-start text-white text-5xl font-semibold m-10">
           <h1>Create and share lists...</h1>
         </div>
         <div className="">
